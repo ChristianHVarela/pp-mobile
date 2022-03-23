@@ -4,11 +4,11 @@ export default class ProdutorSchema {
         primaryKey: 'id',
         properties: {
             id: { type: 'int', indexed: true },
-            produtor: '{}',
+            produtor: 'int',
             quantidade: 'int',
             data: 'date',
             valorTotal: 'double',
-            servico: '{}',
+            servico: 'int',
         },
     };
 }

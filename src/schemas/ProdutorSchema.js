@@ -4,10 +4,11 @@ export default class ProdutorSchema {
         primaryKey: 'id',
         properties: {
             id: { type: 'int', indexed: true },
-            name: 'string',
-            fantasyName: 'string',
+            nome: 'string',
+            nomeFantasia: 'string',
             cpfCnpj: 'string',
             ie: 'string',
+            endereco: 'string',
         },
     };
 }
