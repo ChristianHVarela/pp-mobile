@@ -4,7 +4,7 @@ import { Title, Container, ContainerView, Input, ButtonSubmit, TextSubmit } from
 
 
 
-state {
+state = {
     "cnpj": null,
     "username": null,
     "password": null
