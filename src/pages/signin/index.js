@@ -4,12 +4,6 @@ import { Title, Container, ContainerView, Input, ButtonSubmit, TextSubmit } from
 
 
 
-state = {
-    "cnpj": null,
-    "username": null,
-    "password": null
-}
-
 function Signin(){
     return(
         <Container>
