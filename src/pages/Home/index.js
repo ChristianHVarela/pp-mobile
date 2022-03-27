@@ -8,7 +8,11 @@ import { LinearGradient } from "expo-linear-gradient";
 
 export default function Home({navigation}){
     const [usuarioLogado, setUsuarioLogado] = useState('Faça seu Login!')
+    const [hora1, setHora1] = useState()
 
+    const pressHandler = () => {
+        navigation.navigate('Login')
+    }
 
     return(
         <View style={styleType.container}>
@@ -18,7 +22,7 @@ export default function Home({navigation}){
             </Card>
 
             <LinearGradient start={{x: 0, y: 0}} end={{x: 1, y: 0}} colors={['#008b8b','#00a86b']} style={styleType.buttonLinearGradient}>
-                <TouchableOpacity style={styleType.buttonSubmit} onPress={() => navigation.navigate('Login')}>
+                <TouchableOpacity style={styleType.buttonSubmit} onPress={pressHandler}>
                     <Text style={styleType.buttonLabel}>Logar</Text>
                 </TouchableOpacity>
             </LinearGradient>

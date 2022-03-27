@@ -6,6 +6,7 @@ import CustomDrawer from "./style";
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import { StatusBar } from "expo-status-bar";
 import { View } from "react-native";
+import HorasMaquinaStack from "../StackNavBar/horasMaquina";
 
 const Drawer = createDrawerNavigator();
 
@@ -28,7 +29,7 @@ const RootDrawer = () => {
                         <Ionicons name="home-outline" size={22} color={color} />
                     )
                 }} />
-                <Drawer.Screen name="LancamentoStack" component={LancamentoStack} options={{
+                <Drawer.Screen name="LancamentoStack" component={HorasMaquinaStack} options={{
                     title: 'Horas Máquina',
                     headerTintColor: '#fff',
                     headerStyle: {

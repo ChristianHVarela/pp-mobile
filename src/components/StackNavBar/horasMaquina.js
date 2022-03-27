@@ -3,10 +3,12 @@ import HorasMaquina from "../../pages/Lancamentos";
 
 const Stack = createStackNavigator()
 
-export default function LancamentoStack(){
+export default function HorasMaquinaStack(){
     return(
-        <Stack.Screen initialParams={HorasMaquina}>
-            <Stack.Screen name="Lancamentos" component={HorasMaquina} />
-        </Stack.Screen>
+        <Stack.Navigator>
+            <Stack.Screen name="HorasMaquina" component={HorasMaquina} options={{
+                headerShown: false
+            }}/>
+        </Stack.Navigator>
     )
 };
